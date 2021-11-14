@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Symmetric Difference</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="algorithms.css" />
+  </head>
+  <body id="body">
+    <div class="container">
+      <h1 class="center-text">Find the Symmetric Difference</h1>
+      <div class="row">
+        <p>
+          Passed The mathematical term symmetric difference (△ or ⊕) of two sets
+          is the set of elements which are in either of the two sets but not in
+          both. For example, for sets A = {1, 2, 3} and B = {2, 3, 4}, A △ B =
+          {1, 4}.
+        </p>
+        <p>
+          Symmetric difference is a binary operation, which means it operates on
+          only two elements. So to evaluate an expression involving symmetric
+          differences among three elements (A △ B △ C), you must complete one
+          operation at a time. Thus, for sets A and B above, and C = {2, 3}, A △
+          B △ C = (A △ B) △ C = {1, 4} △ {2, 3} = {1, 2, 3, 4}.
+        </p>
+        <p>
+          Create a function that takes two or more arrays and returns an array
+          of their symmetric difference. The returned array must contain only
+          unique values (no duplicates).
+        </p>
+
+        <pre><code>
+const symmetricDifference = (arr1, arr2) =>
+{
+  const diff = [...arr1, ...arr2].reduce((total, item) =>
+  (!arr1.includes(item) || !arr2.includes(item)) && 
+    !total.includes(item) ? total.concat(item) : total, [])
+
+  return diff
+  }
+
+function sym(...args) {
+  const symDiff = args.reduce((total, item, i) =>
+  symmetricDifference(total, item), [])
+
+  return symDiff.sort();
+}
+
+sym([1, 2, 3], [5, 2, 1, 4]);
+        </code></pre>
+      </div>
+    </div>
+  </body>
+</html>

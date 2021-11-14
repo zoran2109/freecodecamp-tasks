@@ -1,0 +1,15 @@
+#body {
+  background-color: #2a2b40;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.short-sentence-lg {
+  font-size: 1.5em;
+  padding: 2%;
+  display: block;
+}

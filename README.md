@@ -1,1 +1,1 @@
-# freecodecamp-taks
+# freecodecamp-tasks

@@ -1,0 +1,83 @@
+#body {
+  background-color: #2a2b40;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  overflow-x: hidden;
+}
+
+#header {
+  background-color: #0a0a23;
+  color: white;
+  padding: 2%;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+#footer {
+  background-color: #0a0a23;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  position: relative;
+  bottom: 0;
+  padding: 3%;
+  margin: 0;
+  text-align: center;
+  font-size: 1em;
+}
+
+#navigation {
+  background-color: #0a0a23;
+  padding: 0;
+  margin: 0;
+}
+
+#nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.link a {
+  text-decoration: none;
+  color: white;
+  padding: 3% 6%;
+  display: block;
+  font-size: 1.2em;
+}
+
+.link a:hover {
+  background-color: rgba(153, 201, 255, 0.3);
+}
+
+.link a:active {
+  background-color: rgba(153, 201, 255, 0.3);
+}
+
+@media (min-width: 768px) {
+  .collapse.dont-collapse-sm {
+    display: block;
+    height: auto !important;
+    visibility: visible;
+  }
+}
+
+.nav-button {
+  border: solid 2px white;
+  background-color: rgba(153, 201, 255, 0.3);
+  color: white;
+  padding: 2%;
+  display: block;
+  width: 100%;
+}
+.nav-button:active {
+  background-color: white;
+  color: #0a0a23;
+}
+
+@media (max-width: 768px) {
+  .algorithm-iframe {
+    height: 1000px;
+  }
+}

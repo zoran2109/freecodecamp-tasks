@@ -1,6 +1,7 @@
 {
   "name": "fcc-learn-npm-package-json",
   "author": "Zoran",
+  "version": "1.0.0",
   "description": "A project edited for learning purposes while following tutorial on freeCodeCamp",
   "keywords": [
     "freecodecamp",

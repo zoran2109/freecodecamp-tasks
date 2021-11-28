@@ -8,9 +8,9 @@
 #header {
   background-color: #0a0a23;
   color: white;
-  padding: 2%;
+  padding: 1%;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 1.5em;
 }
 
 #footer {
@@ -55,29 +55,23 @@
   background-color: rgba(153, 201, 255, 0.3);
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .collapse.dont-collapse-sm {
     display: block;
     height: auto !important;
     visibility: visible;
   }
-}
+} */
 
 .nav-button {
   border: solid 2px white;
   background-color: rgba(153, 201, 255, 0.3);
   color: white;
-  padding: 2%;
+  padding: 10%;
   display: block;
-  width: 100%;
+  width: 150px;
 }
 .nav-button:active {
   background-color: white;
   color: #0a0a23;
-}
-
-@media (max-width: 768px) {
-  .algorithm-iframe {
-    height: 1000px;
-  }
 }

@@ -31,63 +31,54 @@
           });
         }
       };
+      document.addEventListener("DOMContentLoaded", () => {
+        const frame = document.getElementById("algorithm-iframe");
+        // Adjusting the iframe height onload event
+        frame.onload = () => {
+          frame.style.height =
+            frame.contentWindow.document.body.scrollHeight + "px";
+        };
+      });
     </script>
-
-    <header id="header" class="col-xs-12">freeCodeCamp Algorithms</header>
+    <header id="header" class="col-xs-12">freeCodeCamp Algorithms
+      <div class="btn-group">
+        <button
+          class="nav-button dropdown-toggle"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Action
+        </button>
+        <div class="dropdown-menu">
+              <a href="home.html" class="dropdown-item" target="algorithm">Home</a>
+              <a href="symmetric-difference.html" class="dropdown-item" target="algorithm"
+                >Symmetric Difference</a
+              >
+              <a href="inventory-update.html" class="dropdown-item" class="dropdown-item" target="algorithm"
+                >Inventory Update</a
+              >
+              <a href="pairwise.html" class="dropdown-item" class="dropdown-item" target="algorithm">Pairwise</a>
+        </div>
+      </div>
+    </header>
     <div class="row">
       <div class="col-sm-12 col-md-4 col-lg-2">
-        <aside id="navigation">
-          <button
-            class="d-block d-md-none nav-button"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapsible-nav"
-            aria-expanded="false"
-          >
-            Select Algorithm
-          </button>
-          <nav
-            class="collapse dont-collapse-sm"
-            id="collapsible-nav"
-            onclick="hide()"
-          >
-            <ul id="nav-list">
-              <li class="link">
-                <a href="home.html" target="algorithm">Home</a>
-              </li>
-              <li class="link">
-                <a href="symmetric-difference.html" target="algorithm"
-                  >Symmetric Difference</a
-                >
-              </li>
-              <li class="link">
-                <a href="inventory-update.html" target="algorithm"
-                  >Inventory Update</a
-                >
-              </li>
-              <li class="link">
-                <a href="pairwise.html" target="algorithm">Pairwise</a>
-              </li>
-              <li class="link"><a href="#">Bubble Sort</a></li>
-              <li class="link"><a href="#">Selection Sort</a></li>
-              <li class="link"><a href="#">Insertion Sort</a></li>
-              <li class="link"><a href="#">Quick Sort</a></li>
-              <li class="link"><a href="#">Merge Sort</a></li>
-            </ul>
-          </nav>
+    
+
         </aside>
       </div>
       <iframe
-        class="container col-sm-12 col-md-8 col-lg-10 algorithm-iframe"
+        class="container col-sm-12 col-md-8 col-lg-10"
         name="algorithm"
+        id="algorithm-iframe"
       ></iframe>
     </div>
     <footer id="footer" class="col-xs-12">2021.</footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
   </body>
 </html>

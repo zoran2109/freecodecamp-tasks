@@ -1,6 +1,7 @@
 {
   "name": "fcc-learn-npm-package-json",
   "author": "Zoran",
+  "version": "1.0.0",
   "description": "A project edited for learning purposes while following tutorial on freeCodeCamp",
   "keywords": [
     "freecodecamp",
@@ -9,7 +10,8 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "moment": "2.14.0"
   },
   "main": "server.js",
   "scripts": {
